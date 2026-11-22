@@ -1,0 +1,2 @@
+# Local render output — the grader reads entry.png from the repo root only.
+out/

@@ -32,7 +32,8 @@ from any other date appears anywhere on the page.
 ## How it runs
 
 `main.ts` (Node 22, standard library only) copies `entry.png` to
-`/output/entry.png`. The image is 1024 × 1024 px, 357,156 bytes. Run it
+`/output/entry.png`. The image is 1024 × 1024 px, 357,156 bytes. Two
+runs write byte-identical output (verified with `cmp`). Run it
 locally with:
 
 ```sh

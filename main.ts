@@ -4,7 +4,9 @@
 // entry.png; this program only carries that finished image to the output
 // directory the grader reads. Keeping the copy step tiny means the run is
 // deterministic: two runs write byte-identical files, because nothing is
-// generated, fetched, or randomised at run time.
+// generated, fetched, or randomised at run time. The page itself uses one
+// colour per region, so a reader can trace any story from its kicker to
+// its map pin and its index dot without reading a single label twice.
 //
 // Outside the grader's container, MAKEFUN_OUTPUT_DIR stands in for /output:
 //   mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
